@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Underwriter Dashboard</title>
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/cb3900160f.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Web Awesome"
+        href="/css/app-wa-d53d10572a0e0d37cb8d614a3f177a0c.css?vsn=d">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css">
+
+    <link rel="stylesheet" href="./assets/css/trm_portal.css">
+</head>
+
+<body>
+    <div class="body-container">
+        <aside>
+            <nav>
+                <!-- <div class="nav-links-container"> -->
+                <a href="index.html" class="nav-links"><i class="fa-light fa-objects-column"></i></a>
+                <!-- <div class="openright" id="openright"> -->
+                <a href="javascript:void(0)" class="nav-links active"><i class="fa-light fa-calendar"></i></a>
+                <a href="request_details.html" class="nav-links"><i class="fa-light fa-briefcase"></i></a>
+                <a href="preloss_link_generation.html" class="nav-links"><i class="fa-light fa-command"></i></a>
+                <a href="preloss_link_optional.html" class="nav-links"><i class="fa-light fa-chart-pie-simple"></i></a>
+                <a href="postloss_link_optional.html" class="nav-links"><i class="fa-light fa-gear"></i></a>
+                <!-- </div> -->
+            </nav>
+            <div class="nav-opened">
+                <img src="assets/images/leadway_logo_landscape.png" alt="Javascript Logo" class="nav-logo">
+                <span>
+                    <h4 class="nav-opened-title">TRM</h4>
+                    <div class="openright-content" id="openright-content">
+                        <a href="trm_portal.html" class="nav-links"><i class="fa-sharp fa-thin fa-chart-simple"></i>
+                            Overview</a>
+                        <a href="#" class="nav-links active"><i class="fa-light fa-table-list"></i> Requests</a>
+                    </div>
+                </span>
+            </div>
+        </aside>
+        <main>
+            <header id="main-header">
+                <a href="javascript:void(0)"><i class="fa-light fa-bell"></i></a>
+                <div class="dropdown" id="">
+                    <a href="javascript:void(0)">
+                        <span class="user-initials">AM</span>
+                        <span class="name">Adesola</span>
+                        <i class="fa-light fa-angle-down"></i>
+                    </a>
+                    <div class="dropdown-content" id="">
+                        <a href="javascript:void(0)">
+                            Logout
+                            <i class="fa-light fa-arrow-right-from-bracket"></i>
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <section class="main-content">
+                <div class="welcome">
+                    <span>
+                        <h3>Create New Inspection </h3>
+                        <p>See inspection across all business classes</p>
+                    </span>
+                    <span>
+                        <a href="./preloss_link1.html" class="back-link" style="display: flex;flex-direction: column;justify-content: center;align-items: center;color:rgb(184, 176, 176)"> 
+                            <i class="fa-regular fa-xmark-large" style="font-size: 30px;"></i>&nbsp;&nbsp; <small>Close</small></a>
+                    </span>
+                </div>
+                <div class="containerForNew">
+                    <div class="createNew">
+                        <div class="creationCard1" id="creationCard1"><img src="./assets/images/Frame1.png" alt="">
+                        </div>
+                        <div class="creationCard2" id="creationCard2"><img src="./assets/images/Frame2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="classSelection">
+                        <p>Choose a class</p>
+                        <select class="slctNew" name="" id="">
+                            <option value="motors">&#x1F7E0; Motors</option>
+                            <option value="property">&#x1F535; Property</option>
+                            <option value="marine">&#x1F7E3; Marine</option>
+                            <option value="agric">&#x1F7E2; Agric</option>
+                            <option value="bond">&#x1F7E1; Bond</option>
+                            <option value="engineering">&#x1F534; Engineering</option>
+                        </select>
+                    </div>
+                    <div class="btnNewCont">
+                        <button class="btnNew" id="createRequestBtn" type="button">
+                            <i class="fa-regular fa-circle-arrow-right"></i> Create Request
+                        </button>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+                const creationCard1 = document.getElementById('creationCard1');
+                const creationCard2 = document.getElementById('creationCard2');
+                const createRequestBtn = document.getElementById('createRequestBtn');
+
+                let selectedCard = '';
+
+                creationCard1.addEventListener('click', function () {
+                    addBorder(creationCard1, 'highlight1');
+                    createRequestBtn.classList.add('orange');
+                    selectedCard = 'preloss';
+                });
+
+                creationCard2.addEventListener('click', function () {
+                    addBorder(creationCard2, 'highlight2');
+                    createRequestBtn.classList.add('orange');
+                    selectedCard = 'postloss';
+                });
+
+                createRequestBtn.addEventListener('click', function () {
+                    if (selectedCard === 'preloss') {
+                        location.href = 'preloss_link1.html';
+                    } else if (selectedCard === 'postloss') {
+                        location.href = 'postloss_link2.html';
+                    }
+                });
+
+                function addBorder(element, className) {
+                    const allCards = document.querySelectorAll('.creationCard1, .creationCard2');
+                    for (const card of allCards) {
+                        card.classList.remove('highlight1', 'highlight2');
+                    }
+                    element.classList.add(className);
+                }
+            });
+    </script>
+</body>
+
+</html>

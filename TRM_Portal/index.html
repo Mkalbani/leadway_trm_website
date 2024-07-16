@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRM Portal</title>
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/cb3900160f.js" crossorigin="anonymous"></script>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.4.2/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.4.2/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+            <div class="logo"><img src="./assets/images/leadway.png" alt="">
+            </div>
+            <h1>Underwriter Dashboard</h1>
+            <p><small>Welcome. Login to your portal account</small></p>
+            <form>
+                <label class="lgn" for="login-id">Login ID</label>
+                <div class="input-container">
+                <input type="text" id="login-id" name="login-id" placeholder="Enter your login ID">
+                <i class="fi fi-rr-user"></i>
+                </div>
+                <div class="password-container">
+
+                <label class="pswd" for="password">Password</label>
+                    <span class="show" id="myPassword" onclick="showPassword()" style="cursor: pointer;">SHOW</span>
+                    </div>
+                <div class="input-container">
+                    <input type="password" id="password" name="password" value="Enter your password">
+                    <i class="fi fi-rs-lock"></i>
+                </div>
+                <div class="reset">
+                    <small><p>Keep me logged in</p></small>
+                    <small><p>Reset password</p></small>
+                </div>
+
+                <button class="btn" type="submit" formaction="trm_portal.html">Login</button>
+            </form>
+
+
+        </div>
+    </div>
+        <div class="right">
+            <div class="help">
+                <span><i class="fa-regular fa-circle-question"></i><a href="#">Help</a></span>
+            </div>
+            <span class="customer-management">
+                <img src="./assets/images/image1.png" alt="">
+                <div class="customer-details">
+                    <h3>Customer Management</h3>
+                    <p class="p">Manage all customers from individual customers to corporate or group customers.</p>
+                </div>
+            </span>
+        </div>
+    </div>
+    
+<script src="scripts.js"></script>
+</body>
+</html>

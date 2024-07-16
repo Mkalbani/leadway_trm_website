@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Underwriter Dashboard</title>
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/cb3900160f.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Web Awesome"
+        href="/css/app-wa-d53d10572a0e0d37cb8d614a3f177a0c.css?vsn=d">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css">
+
+    <link rel="stylesheet" href="./assets/css/trm_portal.css">
+</head>
+
+<body>
+    <div class="body-container">
+        <aside>
+            <nav>
+                <!-- <div class="nav-links-container"> -->
+                <a href="index.html" class="nav-links"><i class="fa-light fa-objects-column"></i></a>
+                <!-- <div class="openright" id="openright"> -->
+                <a href="javascript:void(0)" class="nav-links active"><i class="fa-light fa-calendar"></i></a>
+                <a href="request_details.html" class="nav-links"><i class="fa-light fa-briefcase"></i></a>
+                <a href="preloss_link_generation.html" class="nav-links"><i class="fa-light fa-command"></i></a>
+                <a href="preloss_link_optional.html" class="nav-links"><i class="fa-light fa-chart-pie-simple"></i></a>
+                <a href="postloss_link_optional.html" class="nav-links"><i class="fa-light fa-gear"></i></a>
+                <!-- </div> -->
+            </nav>
+            <div class="nav-opened">
+                <img src="assets/images/leadway_logo_landscape.png" alt="Javascript Logo" class="nav-logo">
+                <span>
+                    <h4 class="nav-opened-title">TRM</h4>
+                    <div class="openright-content" id="openright-content">
+                        <a href="trm_portal.html" class="nav-links"><i class="fa-sharp fa-thin fa-chart-simple"></i>
+                            Overview</a>
+                        <a href="#" class="nav-links active"><i class="fa-light fa-table-list"></i> Requests</a>
+                    </div>
+                </span>
+            </div>
+        </aside>
+        <main>
+            <header id="main-header">
+                <a href="javascript:void(0)"><i class="fa-light fa-bell"></i></a>
+                <div class="dropdown" id="">
+                    <a href="javascript:void(0)">
+                        <span class="user-initials">AM</span>
+                        <span class="name">Adesola</span>
+                        <i class="fa-light fa-angle-down"></i>
+                    </a>
+                    <div class="dropdown-content" id="">
+                        <a href="javascript:void(0)">
+                            Logout
+                            <i class="fa-light fa-arrow-right-from-bracket"></i>
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <section class="main-content">
+                <div class="welcome">
+                    <span>
+                        <h3>Inspection List</h3>
+                        <p>See inspection across all business classes</p>
+                    </span>
+                    <!-- <button type="button">
+                        <i class="fa-light fa-plus"></i>
+                        Create New Inspection
+                    </button> -->
+                    <div class="search-container">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search">
+                    </div>
+                </div>
+                <div class="inspections">
+                    <section class="content">
+                        <div class="controls">
+                            <span class="inspection-title">
+                                <button onclick="location.href='inspection_list.html'" class="filter-btn">All Requests</button>
+                                <button onclick="location.href='inspection_list-2.html'" class="filter-btn">Ongoing</button>
+                                <button class="filter-btn active" onclick="location.href='inspection_list-3.html'">Completed</button></span>
+                            <span class="inspection-title-right">
+                                <select class="filter-dropdown">
+                                    <option>Marine</option>
+                                </select>
+                                <select class="sort-dropdown">
+                                    <option><span>Sort by:</span> Class</option>
+                                </select>
+                            </span>
+                        </div>
+                        <div class="table-container" id="">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th><a href="#" title="sort by">ID <i
+                                                    class="fa-light fa-angles-up-down"></i></a>
+                                        </th>
+                                        <th><a href="#" title="sort by">Date <i
+                                                    class="fa-light fa-angles-up-down"></i></a>
+                                        </th>
+                                        <th><a href="#" title="sort by">Name <i
+                                                    class="fa-light fa-angles-up-down"></i></a>
+                                        </th>
+                                        <th><a href="#" title="sort by">Inspection method <i
+                                                    class="fa-light fa-angles-up-down"></i></a></th>
+                                        <th><a href="#" title="sort by">Officer <i
+                                                    class="fa-light fa-angles-up-down"></i></a></th>
+                                        <th><a href="#" title="sort by">Status <i
+                                                    class="fa-light fa-angles-up-down"></i></a></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>10321</td>
+                                        <td>15/06/2023</td>
+                                        <td><span class="inspection-class">Rovenheights Properties</span>
+                                        </td>
+                                        <td>Digital</td>
+                                        <td>Mustapha Onosanya</td>
+                                        <td><span class="completed">Completed</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>10321</td>
+                                        <td>12/06/2023</td>
+                                        <td><span class="inspection-class">Shoprite stores</span>
+                                        </td>
+                                        <td>Manual</td>
+                                        <td>Mustapha Onosanya</td>
+                                        <td><span class="completed">Completed</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

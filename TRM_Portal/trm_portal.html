@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Underwriter Dashboard</title>
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/cb3900160f.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Web Awesome"
+        href="/css/app-wa-d53d10572a0e0d37cb8d614a3f177a0c.css?vsn=d">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css">
+
+    <link rel="stylesheet" href="./assets/css/trm_portal.css">
+</head>
+
+<body>
+    <div class="body-container">
+        <aside>
+            <nav>
+                <!-- <div class="nav-links-container"> -->
+                <a href="index.html" class="nav-links"><i class="fa-light fa-objects-column"></i></a>
+                <!-- <div class="openright" id="openright"> -->
+                <a href="javascript:void(0)" class="nav-links active"><i class="fa-light fa-calendar"></i></a>
+                <a href="request_details.html" class="nav-links"><i class="fa-light fa-briefcase"></i></a>
+                <a href="preloss_link_generation.html" class="nav-links"><i class="fa-light fa-command"></i></a>
+                <a href="preloss_link_optional.html" class="nav-links"><i class="fa-light fa-chart-pie-simple"></i></a>
+                <a href="postloss_link_optional.html" class="nav-links"><i class="fa-light fa-gear"></i></a>
+                <!-- </div> -->
+            </nav>
+            <div class="nav-opened">
+                <img src="assets/images/leadway_logo_landscape.png" alt="Javascript Logo" class="nav-logo">
+                <span>
+                    <h4 class="nav-opened-title">TRM</h4>
+                    <div class="openright-content" id="openright-content">
+                        <a href="trm_portal.html" class="nav-links active"><i
+                                class="fa-sharp fa-thin fa-chart-simple"></i>
+                            Overview</a>
+                        <a href="inspection_list.html" class="nav-links"><i class="fa-light fa-table-list"></i> Requests</a>
+                    </div>
+                </span>
+            </div>
+        </aside>
+        <main>
+            <header id="main-header">
+                <a href="javascript:void(0)"><i class="fa-light fa-bell"></i></a>
+                <div class="dropdown" id="">
+                    <a href="javascript:void(0)">
+                        <span class="user-initials">AM</span>
+                        <span class="name">Adesola</span>
+                        <i class="fa-light fa-angle-down"></i>
+                    </a>
+                    <div class="dropdown-content" id="">
+                        <a href="javascript:void(0)">
+                            Logout
+                            <i class="fa-light fa-arrow-right-from-bracket"></i>
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <section class="main-content">
+                <div class="welcome">
+                    <span>
+                        <h3>Welcome, <span class="firstname">Olufemi</span></h3>
+                        <p>Take a look at your dashboard and see all pending tasks</p>
+                    </span>
+                    <button type="button" onclick="location.href='new_inspection.html'">
+                        <i class="fa-light fa-plus"></i>
+                        Create New Inspection
+                    </button>
+                </div>
+                <div class="articles">
+                    <div class="summary-stats">
+                        <div class="summary-card">
+                            <div class="card-circle card-circle-left"></div>
+                            <div class="card-circle card-circle-right"></div>
+                            <p>All Requests</p>
+                            <span>
+                                <i class="fa-light fa-hand-pointer"></i>
+                                32
+                            </span>
+                        </div>
+                        <div class="summary-card">
+                            <div class="card-circle card-circle-left"></div>
+                            <div class="card-circle card-circle-right"></div>
+                            <p>Completed Requests</p>
+                            <span>
+                                <i class="fa-light fa-hand-pointer"></i>
+                                114
+                            </span>
+                        </div>
+                        <div class="summary-card">
+                            <div class="card-circle card-circle-left"></div>
+                            <div class="card-circle card-circle-right"></div>
+                            <p>Ongoing Requests</p>
+                            <span>
+                                <i class="fa-light fa-hand-pointer"></i>
+                                19
+                            </span>
+                        </div>
+                        <div class="summary-card">
+                            <div class="card-circle card-circle-left"></div>
+                            <div class="card-circle card-circle-right"></div>
+                            <p>Delayed Requests</p>
+                            <span>
+                                <i class="fa-light fa-hand-pointer"></i>
+                                19
+                            </span>
+                        </div>
+                    </div>
+                    <div class="activity">
+                        <div class="header">
+                            <h5>Activity</h5>
+                            <a href="#">View all <i class="fa-light fa-angle-right"></i></a>
+                        </div>
+                        <ul>
+                            <li>
+                                <p>You have a property inspection coming up in three days</p>
+                                <a href="#">Set Reminder</a>
+                            </li>
+                            <li>
+                                <p>Mustapha Onasanya sent a new property inspection for Rovenheight homes</p>
+                                <a href="#">See Inspection</a>
+                            </li>
+                            <li>
+                                <p>Your scheduled inspection for Gig Logistics is three days overdue</p>
+                                <a href="#">Re-schedule now</a>
+                            </li>
+                            <li>
+                                <p>Mustapha Onasanya sent a new property inspection for Rovenheight homes</p>
+                                <a href="#">See Inspection</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="inspections">
+                    <span class="header">
+                        <h5>Created Inspections</h5>
+                        <a href="#">View all <i class="fa-light fa-angle-right"></i></a>
+                    </span>
+                    <div class="table-container" id="">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th><a href="#" title="sort by">ID <i class="fa-light fa-angles-up-down"></i></a>
+                                    </th>
+                                    <th><a href="#" title="sort by">Name <i class="fa-light fa-angles-up-down"></i></a>
+                                    </th>
+                                    <th><a href="#" title="sort by">Class <i class="fa-light fa-angles-up-down"></i></a>
+                                    </th>
+                                    <th><a href="#" title="sort by">Inspection method <i
+                                                class="fa-light fa-angles-up-down"></i></a></th>
+                                    <th><a href="#" title="sort by">Officer <i
+                                                class="fa-light fa-angles-up-down"></i></a></th>
+                                    <th><a href="#" title="sort by">Status <i
+                                                class="fa-light fa-angles-up-down"></i></a></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>10321</td>
+                                    <td>GIG Logistics</td>
+                                    <td><span class="inspection-class"><i class="fa-solid fa-circle a"></i>Marine</span>
+                                    </td>
+                                    <td>Visual</td>
+                                    <td>Officer Smith</td>
+                                    <td><span class="quote-request">Quote Request</span></td>
+                                </tr>
+                                <tr>
+                                    <td>10321</td>
+                                    <td>Shopright Stores</td>
+                                    <td><span class="inspection-class"><i class="fa-solid fa-circle b"></i> Property</span>
+                                    </td>
+                                    <td>Manual</td>
+                                    <td>Officer Brown</td>
+                                    <td><span class="completed">Completed</span></td>
+                                </tr>
+                                <tr>
+                                    <td>10321</td>
+                                    <td>Abiodun Aboyemi</td>
+                                    <td><span class="inspection-class"><i class="fa-solid fa-circle c"></i>Motors</span>
+                                    </td>
+                                    <td>Automated</td>
+                                    <td>Officer Taylor</td>
+                                    <td><span class="ongoing">Ongoing</span></td>
+                                </tr>
+                                <tr>
+                                    <td>10321</td>
+                                    <td>Ben's Agro-Allied</td>
+                                    <td><span class="inspection-class"><i class="fa-solid fa-circle d"></i> Agric</span>
+                                    </td>
+                                    <td>Visual</td>
+                                    <td>Officer Wilson</td>
+                                    <td><span class="sent-to-engineer">Sent to Engineer</span></td>
+                                </tr>
+                                <tr>
+                                    <td>10321</td>
+                                    <td>Abiodun Abayem</td>
+                                    <td><span class="inspection-class"><i class="fa-solid fa-circle a"></i> Bond</span>
+                                    </td>
+                                    <td>Manual</td>
+                                    <td>Officer Martinez</td>
+                                    <td><span class="link-expired"><i class="fa-light fa-xmark"></i> Link Expired</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>10321</td>
+                                    <td>Julius Berger</td>
+                                    <td><span class="inspection-class"><i class="fa-solid fa-circle b"></i>Engineering</span>
+                                    </td>
+                                    <td>Automated</td>
+                                    <td>Officer Anderson</td>
+                                    <td><span class="inspection-link"><i class="fa-light fa-arrow-turn-left"></i>
+                                            Inspection Link</span></td>
+                                </tr>
+                                <tr>
+                                    <td>10321</td>
+                                    <td>Abiodun Abayemi</td>
+                                    <td><span class="inspection-class"><i class="fa-solid fa-circle c"></i>Engineering</span>
+                                    </td>
+                                    <td>Visual</td>
+                                    <td>Officer Thomas</td>
+                                    <td><span class="completed">Completed</span></td>
+                                </tr>
+                                <tr>
+                                    <td>10321</td>
+                                    <td>Amy Clark</td>
+                                    <td><span class="inspection-class"><i class="fa-solid fa-circle d"></i>Agric</span>
+                                    </td>
+                                    <td>Manual</td>
+                                    <td>Officer Jackson</td>
+                                    <td><span class="quote-request">Quote Request</span></td>
+                                </tr>
+                                <tr>
+                                    <td>10321</td>
+                                    <td>Christopher Lewis</td>
+                                    <td><span class="inspection-class"><i class="fa-solid fa-circle a"></i> A</span>
+                                    </td>
+                                    <td>Automated</td>
+                                    <td>Officer White</td>
+                                    <td><span class="inspection-link"><i class="fa-light fa-arrow-turn-left"></i>
+                                            Inspection Link</span></td>
+                                </tr>
+                                <tr>
+                                    <td>10321</td>
+                                    <td>Ashley Walker</td>
+                                    <td><span class="inspection-class"><i class="fa-solid fa-circle b"></i> B</span>
+                                    </td>
+                                    <td>Visual</td>
+                                    <td>Officer Harris</td>
+                                    <td><span class="completed">Completed</span></td>
+                                </tr>
+                                <tr>
+                                    <td>10321</td>
+                                    <td>Joshua Allen</td>
+                                    <td><span class="inspection-class"><i class="fa-solid fa-circle c"></i> C</span>
+                                    </td>
+                                    <td>Manual</td>
+                                    <td>Officer Robinson</td>
+                                    <td><span class="ongoing">Ongoing</span></td>
+                                </tr>
+                                <tr>
+                                    <td>10321</td>
+                                    <td>Olivia Young</td>
+                                    <td><span class="inspection-class"><i class="fa-solid fa-circle d"></i> D</span>
+                                    </td>
+                                    <td>Automated</td>
+                                    <td>Officer Lewis</td>
+                                    <td><span class="inspection-link"><i class="fa-light fa-arrow-turn-left"></i>
+                                            Inspection Link</span></td>
+                                </tr>
+                                <tr>
+                                    <td>10321</td>
+                                    <td>Daniel King</td>
+                                    <td><span class="inspection-class"><i class="fa-solid fa-circle a"></i> A</span>
+                                    </td>
+                                    <td>Visual</td>
+                                    <td>Officer Walker</td>
+                                    <td><span class="completed">Completed</span></td>
+                                </tr>
+                                <tr>
+                                    <td>10321</td>
+                                    <td>Lauren Wright</td>
+                                    <td><span class="inspection-class"><i class="fa-solid fa-circle b"></i> B</span>
+                                    </td>
+                                    <td>Manual</td>
+                                    <td>Officer Allen</td>
+                                    <td><span class="ongoing">Ongoing</span></td>
+                                </tr>
+                                <tr>
+                                    <td>10321</td>
+                                    <td>Matthew Scott</td>
+                                    <td><span class="inspection-class"><i class="fa-solid fa-circle c"></i> C</span>
+                                    </td>
+                                    <td>Automated</td>
+                                    <td>Officer Young</td>
+                                    <td><span class="quote-request">Quote Request</span></td>
+                                </tr>
+                                <tr>
+                                    <td>10321</td>
+                                    <td>Rachel Hill</td>
+                                    <td><span class="inspection-class"><i class="fa-solid fa-circle d"></i> D</span>
+                                    </td>
+                                    <td>Visual</td>
+                                    <td>Officer King</td>
+                                    <td><span class="completed">Completed</span></td>
+                                </tr>
+                                <tr>
+                                    <td>10321</td>
+                                    <td>James Green</td>
+                                    <td><span class="inspection-class"><i class="fa-solid fa-circle a"></i> A</span>
+                                    </td>
+                                    <td>Manual</td>
+                                    <td>Officer Wright</td>
+                                    <td><span class="completed">Completed</span></td>
+                                </tr>
+                                <tr>
+                                    <td>10321</td>
+                                    <td>Megan Baker</td>
+                                    <td><span class="inspection-class"><i class="fa-solid fa-circle b"></i> B</span>
+                                    </td>
+                                    <td>Automated</td>
+                                    <td>Officer Scott</td>
+                                    <td><span class="completed">Completed</span></td>
+                                </tr>
+                                <tr>
+                                    <td>10321</td>
+                                    <td>Andrew Adams</td>
+                                    <td><span class="inspection-class"><i class="fa-solid fa-circle c"></i> C</span>
+                                    </td>
+                                    <td>Visual</td>
+                                    <td>Officer Hill</td>
+                                    <td><span class="completed">Completed</span></td>
+                                </tr>
+                                <tr>
+                                    <td>10321</td>
+                                    <td>Sophia Nelson</td>
+                                    <td><span class="inspection-class"><i class="fa-solid fa-circle d"></i> D</span>
+                                    </td>
+                                    <td>Manual</td>
+                                    <td>Officer Green</td>
+                                    <td><span class="completed">Completed</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

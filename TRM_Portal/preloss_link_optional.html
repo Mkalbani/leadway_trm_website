@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Underwriter Dashboard</title>
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/cb3900160f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Web Awesome"
+        href="/css/app-wa-d53d10572a0e0d37cb8d614a3f177a0c.css?vsn=d">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css">
+    <link rel="stylesheet" href="./assets/css/trm_portal.css">
+</head>
+
+<body>
+    <div class="body-container">
+        <aside>
+            <nav>
+                <a href="index.html" class="nav-links"><i class="fa-light fa-objects-column"></i></a>
+                <a href="javascript:void(0)" class="nav-links active"><i class="fa-light fa-calendar"></i></a>
+                <a href="request_details.html" class="nav-links"><i class="fa-light fa-briefcase"></i></a>
+                <a href="preloss_link_generation.html" class="nav-links"><i class="fa-light fa-command"></i></a>
+                <a href="preloss_link_optional.html" class="nav-links"><i class="fa-light fa-chart-pie-simple"></i></a>
+                <a href="postloss_link_optional.html" class="nav-links"><i class="fa-light fa-gear"></i></a>
+            </nav>
+            <div class="nav-opened">
+                <img src="assets/images/leadway_logo_landscape.png" alt="Javascript Logo" class="nav-logo">
+                <span>
+                    <h4 class="nav-opened-title">TRM</h4>
+                    <div class="openright-content" id="openright-content">
+                        <a href="trm_portal.html" class="nav-links"><i class="fa-sharp fa-thin fa-chart-simple"></i>
+                            Overview</a>
+                        <a href="#" class="nav-links active"><i class="fa-light fa-table-list"></i> Requests</a>
+                    </div>
+                </span>
+            </div>
+        </aside>
+        <main>
+            <header id="main-header">
+                <a href="javascript:void(0)"><i class="fa-light fa-bell"></i></a>
+                <div class="dropdown" id="">
+                    <a href="javascript:void(0)">
+                        <span class="user-initials">AM</span>
+                        <span class="name">Adesola</span>
+                        <i class="fa-light fa-angle-down"></i>
+                    </a>
+                    <div class="dropdown-content" id="">
+                        <a href="javascript:void(0)">Logout<i class="fa-light fa-arrow-right-from-bracket"></i></a>
+                    </div>
+                </div>
+            </header>
+            <section class="main-content">
+                <div class="welcome">
+                    <span>
+                        <h3>Create New Inspection</h3>
+                        <p>See inspection across all business classes</p>
+                    </span>
+                    <span>
+                        <a href="./preloss_link_optional.html" class="back-link"> <i
+                                class="fa-regular fa-less-than"></i>&nbsp;&nbsp;Back to create request</a>
+                    </span>
+                </div>
+
+                <form class="inspection-form">
+                    <fieldset>
+                        <h3 style="border-bottom: 1px solid #c3c4c6; padding-bottom: 40px;">Pre-Loss Link Generation</h3>
+                        <div class="form-grid" style="border-bottom: 1px solid #c3c4c6; padding-bottom: 40px;">
+                            <div class="form-group">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <label for="policy-number">Policy Number (optional)</label>
+                                <input type="text" id="policy-number" placeholder="Your name">
+                            </div>
+                        </div>
+                        <div class="form-grid" style="margin-top: 40px;">
+                            <div class="form-group">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <label for="insured-for">Client First Name</label>
+                                <input type="text" id="insured-for" placeholder="Your name">
+                            </div>
+                            <!-- <div class="form-group">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <label for="assign-to">Assign To</label>
+                                <input type="text" id="assign-to">
+                            </div> -->
+
+                            <div class="form-group">
+                                <label for="contact-first-name">Client Last Name</label>
+                                <input type="text" id="contact-first-name" placeholder="Your name">
+                            </div>
+                            <div class="form-group phone-group">
+                                <label for="contact-phone-number">Client Phone Number</label>
+                                <div class="phone-input-wrapper">
+                                    <select id="phone-prefix">
+                                        <option value="+234">+234</option>
+                                    </select>
+                                    <input type="text" id="contact-phone-number" placeholder="Your name">
+                                </div>
+                            </div>
+                            <div class="form-group" >
+                                <label for="contact-email">Client Email Address</label>
+                                <input type="email" id="contact-email" placeholder="Your name">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="lga">Vehicle Make</label>
+                                <select class="optionNew" name="" id="">
+                                    <option value="">Your name</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="risk-house-number">Vehicle Model</label>
+                                <input type="text" id="risk-house-number">
+                            </div>
+                            <div class="form-group">
+                                <label for="risk-address">Registration Number</label>
+                                <input type="text" id="risk-address" placeholder="Your name">
+                            </div>
+                            <!-- <div class="form-group">
+                                <label for="state">State</label>
+                                <input type="text" id="state">
+                            </div> -->
+                            <div class="form-group">
+                                <label for="lga">Year</label>
+                                <select class="optionNew" name="" id="">
+                                    <option value="">Select a year</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="pptDesc"> Comments</label>
+                            <textarea name="" id=""></textarea>
+                        </div>
+                        <small><a href="#">Attach document</a></small>
+                    </fieldset>
+                    <div class="btnBottomRight">
+                        <button class="btnBottomRightActual" id="generate-btn">Send request</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h4>Send to TRM</h4>
+            <p>Are you sure you want to send this request?</p>
+            <div class="cancelNew">
+                <button id="cancel-btn">Cancel</button>
+                <button id="submit-btn">Submit</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="confirmation-modal">
+        <div class="modal-content2">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+            </div>
+            <img src="./assets/images/success-icon.png" alt="Success Icon" class="modal-icon">
+            <p>You've successfully created a new Inspection ID: 32321 for PRIME GARDENS</p>
+            <div class="btnNew2">
+                <button id="request-list-btn">Go to request list</button>
+                <button id="new-inspection-btn">Create new inspection</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('generate-btn').addEventListener('click', function (event) {
+            event.preventDefault();
+            document.getElementById('modal').style.display = 'flex';
+        });
+
+        document.getElementById('cancel-btn').addEventListener('click', function () {
+            document.getElementById('modal').style.display = 'none';
+        });
+        document.getElementById('modal').addEventListener('click', function () {
+            document.getElementById('modal').style.display = 'none';
+        });
+
+        document.getElementById('confirmation-modal').addEventListener('click', function () {
+            document.getElementById('confirmation-modal').style.display = 'none';
+        });
+        document.getElementById('submit-btn').addEventListener('click', function () {
+            document.getElementById('modal').style.display = 'none';
+            document.getElementById('confirmation-modal').style.display = 'flex';
+        });
+
+        document.getElementById('request-list-btn').addEventListener('click', function () {
+            window.location.href = 'inspection_list.html';
+        });
+
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        document.getElementById('new-inspection-btn').addEventListener('click', function () {
+            window.location.href = 'new_inspection.html';
+        });
+    </script>
+</body>
+
+</html>

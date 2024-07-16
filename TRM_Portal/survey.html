@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Underwriter Dashboard</title>
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/cb3900160f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Web Awesome"
+        href="/css/app-wa-d53d10572a0e0d37cb8d614a3f177a0c.css?vsn=d">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css">
+    <link rel="stylesheet" href="./assets/css/trm_portal.css">
+</head>
+
+<body>
+    <div class="body-container">
+        <aside>
+            <nav>
+                <a href="index.html" class="nav-links"><i class="fa-light fa-objects-column"></i></a>
+                <a href="javascript:void(0)" class="nav-links active"><i class="fa-light fa-calendar"></i></a>
+                <a href="request_details.html" class="nav-links"><i class="fa-light fa-briefcase"></i></a>
+                <a href="preloss_link_generation.html" class="nav-links"><i class="fa-light fa-command"></i></a>
+                <a href="preloss_link_optional.html" class="nav-links"><i class="fa-light fa-chart-pie-simple"></i></a>
+                <a href="postloss_link_optional.html" class="nav-links"><i class="fa-light fa-gear"></i></a>
+            </nav>
+            <div class="nav-opened">
+                <img src="assets/images/leadway_logo_landscape.png" alt="Javascript Logo" class="nav-logo">
+                <span>
+                    <h4 class="nav-opened-title">TRM</h4>
+                    <div class="openright-content" id="openright-content">
+                        <a href="trm_portal.html" class="nav-links"><i class="fa-sharp fa-thin fa-chart-simple"></i>
+                            Overview</a>
+                        <a href="#" class="nav-links active"><i class="fa-light fa-table-list"></i> Requests</a>
+                    </div>
+                </span>
+            </div>
+        </aside>
+        <main>
+            <header id="main-header">
+                <a href="javascript:void(0)"><i class="fa-light fa-bell"></i></a>
+                <div class="dropdown">
+                    <a href="javascript:void(0)">
+                        <span class="user-initials">AM</span>
+                        <span class="name">Adesola</span>
+                        <i class="fa-light fa-angle-down"></i>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="javascript:void(0)">
+                            Logout
+                            <i class="fa-light fa-arrow-right-from-bracket"></i>
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <section class="main-content">
+                <div class="welcome">
+                    <span>
+                        <h3>Survey Report</h3>
+                        <p>See inspection across all business classes</p>
+                    </span>
+                </div>
+                <div class="policy">
+                <div class="policy-container">
+                    <div class="property-info">
+                        <img src="assets/images/tower.png" alt="Property Image" class="property-image">
+                        <p class="property-type">• Property</p>
+                    </div>
+                    <div class="policy-details">
+                        <h4>Rovenheights Properties LTD.</h2>
+                        <div class="policy-info-grid">
+                            <div class="policy-info-item">
+                                <p class="label">Policy Number:</p>
+                                <p class="value">ALR12358493</p>
+                            </div>
+                            <div class="policy-info-item">
+                                <p class="label">Lease Type:</p>
+                                <p class="value">Non-Motor</p>
+                            </div>
+                            <div class="policy-info-item">
+                                <p class="label">Policy Term (Years):</p>
+                                <p class="value">5</p>
+                            </div>
+                            <div class="policy-info-item">
+                                <p class="label">Expiry Date:</p>
+                                <p class="value">19 Dec. 2024</p>
+                            </div>
+                            <div class="policy-info-item">
+                                <p class="label">Commencement Date:</p>
+                                <p class="value">19 Dec. 2019</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vertical-line"></div>
+                    <div class="policy-progress">
+                        <h3>Policy Progress</h3>
+                        <img src="assets/images/percent.png" alt="67% Progress" class="progress-image">
+                        <p>3 Days to Expiry</p>
+                    </div>
+                </div>
+                <h3 class="welcome">Insured Details</h4>
+                <div class="policy-container2">
+                    <div class="tabs">
+                        <button class="tab active" id="new" onclick="showContent(this, 'propertyInfo')" >Property Information</button>
+                        <button class="tab" onclick="showContent(this, 'propertyDescription')">Property Description</button>
+                        <button class="tab" onclick="showContent(this, 'supportingDocs')">Supporting Document</button>
+                    </div>
+                <div class="tab-content">
+                    <div id="propertyInfo" class="info-grid visible">
+                        <div class="info-item">
+                            <span class="label2">Insured for</span>
+                            <span class="value">Rovenheight Homes</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label2">Insured Name</span>
+                            <span class="value">Rovenheight Homes</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label2">Loss estimate</span>
+                            <span class="value">#1,200,000</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label2">Cause of Loss</span>
+                            <span class="value">Rovenheight Homes</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label2">Cause of Loss</span>
+                            <span class="value">Rovenheight Homes</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label2">Property Address</span>
+                            <span class="value">No. 16, Rovenheight Homes, Nicon town, Lekki phase 1, Lagos.</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label2">City</span>
+                            <span class="value">Lekki</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label2">State</span>
+                            <span class="value">Lagos</span>
+                        </div>
+                    </div>
+                    <p id="propertyDescription" class="hidden" style="font-size: 14px; padding: 15px;" >
+                        Rovenheight homes registered as a LLC building on the 15th of May 2016 is a Grey and White twelve storey
+                        building located at No 12 OGUNSANYA DRIVE, ALCOVE ESTATE, LEKKI PHASE 1. LAGOS STATE. The property is owned by
+                        Mr. Badmus Akinrele who stands as the insurer of the property.
+                    </p>
+                    <div id="supportingDocs" class="hidden">
+                        <div class="info-item1">
+                            <span class="label2b">Policy Document</span>
+                        </div>
+                        <div class="info-item1">
+                            <span class="label2b">25 Aug 2022 9:00 AM</span>
+                        </div>
+                        <div class="info-item1">
+                            <span class="label3"><i class="fa-regular fa-eye" style="color: #ff7a00;"></i>&nbsp;&nbsp; View</span>
+                        </div>
+                        <div class="info-item1">
+                            <span class="label3">Download</span>
+                        </div>
+                        <div class="info-item1">
+                            <span class="label2b">Policy Report</span>
+                        </div>
+                        <div class="info-item1">
+                            <span class="label2b">25 Aug 2022 9:00 AM</span>
+                        </div>
+                        <div class="info-item1">
+                            <span class="label3"><i class="fa-regular fa-eye" style="color: #ff7a00;"></i>&nbsp;&nbsp; View</span>
+                        </div>
+                        <div class="info-item1">
+                            <span class="label3">Download</span>
+                        </div>
+                        <div class="info-item1">
+                            <span class="label2b">Attachment Document 1</span>
+                        </div>
+                        <div class="info-item1">
+                            <span class="label2b">25 Aug 2022 9:00 AM</span>
+                        </div>
+                        <div class="info-item1">
+                            <span class="label3"><i class="fa-regular fa-eye" style="color: #ff7a00;"></i>&nbsp;&nbsp; View</span>
+                        </div>
+                        <div class="info-item1">
+                            <span class="label3">Download</span>
+                        </div>
+
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,338 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  max-height: 100vh;
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.main {
+  display: flex;
+  height: 90%;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+    padding: 15px;
+
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left {
+  background-color: #f5f5f5;
+  height: 90%;
+  width: 90%;
+  margin: 0;
+  padding: 0;
+}
+
+.right {
+  position: relative;
+  background-color: orange;
+  width: 90%;
+  height: 100%;
+  background: url("../images/laptop1.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.help {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+}
+.customer-management {
+  position: absolute;
+  bottom: 2px;
+  left: 120px;
+  right: 100px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width:100%;
+}
+
+
+.customer-management img {
+  height: 100px; 
+  margin-right: 20px; 
+}
+
+.customer-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.customer-details h3 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+}
+
+.customer-details p {
+  margin: 0;
+  font-size: 14px;
+}
+
+
+h1 {
+  margin-top: 50px;
+  color: rgb(110, 103, 103);
+}
+
+small {
+  font-size: 10px;
+  color: grey;
+}
+
+label,
+input {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  padding: 10px;
+  width: 85%;
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 5px;
+}
+
+.lgn {
+  margin-top: 50px;
+}
+
+.pswd {
+  width: 95%;
+  justify-content: flex-end;
+  margin-right: 0;
+}
+
+label {
+  margin-bottom: 0;
+  font-size: 12px;
+}
+
+input {
+  margin-top: 0;
+}
+
+.btn {
+  margin-top: 10px;
+  padding: 10px;
+  width: 85%;
+  background-color: #ff7a00;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 353;
+  font-style: normal;
+  cursor: pointer;
+}
+
+.logo {
+  display: flex;
+  height: 108px;
+  width: 136px;
+}
+
+.password-container {
+  display: flex;
+  align-items: center;
+  width: 85%;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.password-container input {
+  border: none;
+  outline: none;
+}
+
+.show {
+  color: #ff7a00;
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: small;
+}
+
+.reset{
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.customer-management{
+  height: 100px;
+  width: 400px;
+  background-color: #f5f5f5;
+  margin-top: 0;
+  padding: 10px;
+}
+
+h3{
+    color: grey;
+
+}
+.p{
+  margin-top: 20px;
+  color: grey;
+  font-size: 12px;
+}
+.lst{
+  display: flex;
+}
+
+/* .lst img{
+  height: ;
+} */
+
+.help{
+  justify-content: flex-end;
+}
+
+.help a{
+  color: white;
+  text-decoration: none;
+  font-weight: 100;
+}
+
+.fa-solid{
+  margin-right: 10px;
+  color: white;
+  border: 2px solid black;
+  padding-right: 15px;
+}
+
+.fi {
+  margin-right: 10px;
+
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  width: 85%;
+  padding: 0;
+}
+
+.input-container .icon {
+  margin-right: 10px;
+  color: grey;
+}
+
+.fi{
+  color:grey;
+}
+
+.input-container input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background-color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.input-container .show {
+  color: #ff7a00;
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: small;
+}
+
+@media screen and (max-width: 768px) {
+  .customer-management{
+    display: block;
+    position: absolute;
+    right: 120px;
+    left: 100px;
+  }
+  .right{
+    display: none;
+  }
+    .logo {
+  display: flex;
+  height: 108px;
+  width: 136px;
+}
+  .left{
+    width: 80%;
+  }
+  label{
+    text-align: left;
+  }
+  .main{
+      width: 100%;
+  }
+  form{
+    width: 100%;
+  }
+  input{
+    width: 110%;
+  }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px)  {
+  body{
+    max-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25% 0;
+  }
+  .main {
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+  
+}
+.customer-management {
+  position: absolute;
+  bottom: 2px;
+  left: 50px;
+  right: 210px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width:80%;
+}
