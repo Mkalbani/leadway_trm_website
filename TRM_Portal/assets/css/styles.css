@@ -181,7 +181,9 @@ input {
   color: #ff7a00;
   cursor: pointer;
   margin-left: 10px;
-  font-size: small;
+  font-size: 12px;
+  font-weight: 600;
+  padding-right: 10px;
 }
 
 .reset{
@@ -276,6 +278,9 @@ h3{
   font-size: small;
 }
 
+.input-container, .password-container, .lgn, .btn, .reset{
+  width: 100%;
+}
 @media screen and (max-width: 768px) {
   .customer-management{
     display: block;
@@ -293,7 +298,11 @@ h3{
 }
   .left{
     width: 80%;
-  }
+}
+.input-container, .password-container, .lgn, .btn, .reset{
+  width: 100%;
+}
+
   label{
     text-align: left;
   }
@@ -304,7 +313,7 @@ h3{
     width: 100%;
   }
   input{
-    width: 110%;
+    width: 150%;
   }
 
 }

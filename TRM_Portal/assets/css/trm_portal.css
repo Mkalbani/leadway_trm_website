@@ -902,86 +902,37 @@ option {
   }
 } */
 
-/* Tablets */
-@media screen and (max-width: 768px) {
-  .containerForNew {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+/* prelosslink generation section adjustment */
+/* .main-content1 {
+        padding: 70px 40px 50px 250px;
+        div.welcome {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 15px;
+          span {
+            flex: 2;
+          }
+          button {
+            flex: 1;
+            width: 100%;
+          }
+        }
+        div.articles {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          div.summary-stats {
+            gap: 15px;
+            div.summary-card {
+              gap: 30px;
+            }
+          }
+        }
+      } */
 
-  .createNew {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 100%;
-  }
+  /* dashboard */
 
-  .creationCard1,
-  .creationCard2 {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-  }
-
-  .createNew img {
-    max-width: 350px;
-    max-height: 350px;
-  }
-
- .classSelection select {
-    width: 70%;
-  }
-  .classSelection p{
-        width: 70%;
- 
-    text-align: right;
-  }
-  .btnNew{
-        text-align: center;
-        margin-top: 20px;
-        width: 100%;
-
-
-  }
-}
-
-/* Desktops and larger screens */
-@media screen and (min-width: 769px) {
-  .containerForNew {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .createNew {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 100%;
-  }
-
-  .creationCard1,
-  .creationCard2 {
-    width: auto;
-    height: auto;
-    margin-right: 20px;
-  }
-
-  .createNew img {
-    max-width: 100%;
-    max-height: 100%;
-  }
-
-  .classSelection select,
-  .classSelection p,
-  .btnNew {
-    width: auto;
-    text-align: left;
-    margin: 0;
-  }
-}
 
 
 /* PRELOSS */
@@ -1048,6 +999,20 @@ h3 {
 .btnNew2 button{
   border: 1px solid inherit;
 }
+
+
+/* @media screen and (max-width: 768px){
+  .inspection-form{   
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+  }
+  fieldset{
+    padding: 0;
+    margin-left: 0;
+  }
+} */
+
 /* Phone wrapper */
 .phone-input-wrapper {
   display: flex;
@@ -1372,7 +1337,7 @@ span a {
 
 .timeline-content {
     background-color: #fff;
-    width: 650px;
+    max-width: 650px;
     padding: 20px;
     border-radius: 8px;
     border: 1px solid var(--body-grey);
@@ -1462,7 +1427,148 @@ span a {
   margin-top: 0;
 }
 
-@media (max-width: 768px) {
+/* REQUEST DETAILS RESPONSIVNESS */
+@media only screen and (max-width: 400px) {
+    .body-container, #main-header{
+  width: 100%;
+  }
+  main{
+    width: 80%;
+  }
+
+  .btn-view{
+    padding: 15px;
+  }
+
+    .dashboard-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+        max-width: 100%;
+    }
+
+    .profile-section {
+        width: 100%;
+        text-align: center;
+        padding: 5px;
+        border-left: none;
+        border-right: none;
+    }
+
+    .profile-picture {
+        width: 60px;
+        height: 60px;
+    }
+
+    .profile-info h2 {
+        font-size: 18px;
+    }
+
+    .profile-info .status {
+        font-size: 12px;
+    }
+
+    .details-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 0;
+    }
+
+    .details-list li {
+        font-size: 10px;
+    }
+
+    .timeline-section {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .timeline-content, .timeline-content2 {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 5px;
+        border-right: none;
+        
+    }
+
+    .timeline-content{
+      margin-left: 70px;
+    }
+
+    .leadReq{
+      width: 140px;
+    }
+
+    p small{
+      font-size: 8px;
+    }
+
+    .timeline-content h3, .timeline-content2 h3 {
+        font-size: 12px;
+    }
+
+    .timeline-content .status-container, .timeline-content2 .status-container {
+        font-size: 10px;
+    }
+
+    .policy-container, .policy-container2 {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .smallLead{
+      font-size: 10px;
+    }
+
+    .property-info {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .policy-details {
+        width: 100%;
+    }
+
+    .policy-info-grid {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+    .vertical-line {
+        display: none;
+    }
+
+    .policy-progress {
+        min-width: 100%;
+        margin-top: 10px;
+    }
+
+    .progress-image {
+        width: 40px;
+    }
+
+    .tabs {
+        justify-content: center;
+    }
+
+    .tabs .tab {
+        padding: 5px 10px;
+    }
+
+    .tab-content {
+        padding: 5px 0;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 768px) {
     .dashboard-container {
       display: flex;
         flex-direction: column;
@@ -1933,26 +2039,44 @@ span a {
 
 
 /* SURVEY RESPONSIVE */
-@media screen and (max-width: 1024px) {
+
+@media screen and (max-width: 400px) {
+  main{
+    width: 100%;
+  }
+  .body-container{
+    width: 100%;
+  }
     .policy-container, .policy-container2 {
-        width: 90%;
+        width: 95%;
+        padding: 15px;
     }
-        .policy-info-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .policy-info-grid {
+        grid-template-columns: 1fr;
     }
-    .policy-progress {
-    }
-    .vertical-line {
-        display: none;
-    }
-    .property-info {
-        margin: 0 0 20px 0;
-    }
-        .policy-details {
+    .policy-details {
         width: 100%;
     }
-    
+    .policy-progress h3, .policy-details h4 {
+        font-size: 12px;
+    }
+    .property-image {
+        width: 120px;
+    }
+    .tabs .tab {
+        padding: 8px 16px;
+    }
+    .tab:nth-child(3){
+      padding-right: 25px;
+    }
+    .info-grid, .info-grid.visible{
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .label2b, .label3, #propertyDescription{
+      font-size: 10px;
+    }
 }
+
 
 @media screen and (max-width: 768px) {
     .policy-container {
@@ -1976,24 +2100,250 @@ span a {
     }
 }
 
-@media screen and (max-width: 480px) {
+
+@media screen and (max-width: 1024px) {
     .policy-container, .policy-container2 {
-        width: 95%;
-        padding: 15px;
+        width: 90%;
     }
-    .policy-info-grid {
-        grid-template-columns: 1fr;
+        .policy-info-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
-    .policy-details {
+    .policy-progress {
+    }
+    .vertical-line {
+        display: none;
+    }
+    .property-info {
+        margin: 0 0 20px 0;
+    }
+        .policy-details {
         width: 100%;
     }
-    .policy-progress h3, .policy-details h4 {
-        font-size: 12px;
+    
+}
+
+/* PRELINK RESPONSIVENESS */
+
+/* phone - smaller screen */
+@media screen and (max-width: 400px) {
+  main{
+  width: 45%;
+  }
+  .containerForNew {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .createNew {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .creationCard1,
+  .creationCard2 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .createNew img {
+    max-width: 200px;
+    height: 200px;
+  }
+
+  .classSelection select {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .classSelection p {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  .btnNewCont {
+    width: 100%;
+    text-align: center;
+  }
+
+  .btnNew {
+    width: 100%;
+    max-width: 250px;
+    margin-top: 20px;
+  }
+}
+
+/* Tablets */
+@media screen and (min-width: 401px) and (max-width: 768px) {
+  
+  .containerForNew {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .createNew {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .creationCard1,
+  .creationCard2 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .createNew img {
+    max-width: 350px;
+    max-height: 350px;
+  }
+
+ .classSelection select {
+    width: 70%;
+  }
+  .classSelection p{
+        width: 70%;
+ 
+    text-align: right;
+  }
+  .btnNew{
+        text-align: center;
+        margin-top: 20px;
+        width: 100%;
+
+
+  }
+}
+
+/* Desktops and larger screens */
+@media screen and (min-width: 769px) {
+  .containerForNew {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .createNew {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .creationCard1,
+  .creationCard2 {
+    width: auto;
+    height: auto;
+    margin-right: 20px;
+  }
+
+  .createNew img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .classSelection select,
+  .classSelection p,
+  .btnNew {
+    width: auto;
+    text-align: left;
+    margin: 0;
+  }
+}
+
+/* PRELOSS LINK */
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+    .inspection-form {
+        width: 100%;
+        padding: 10px;
     }
-    .property-image {
-        width: 120px;
+
+    fieldset {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 10px;
     }
-    .tabs .tab {
-        padding: 8px 16px;
+
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .form-group {
+        margin-right: 0;
+        padding: 5px;
+    }
+
+    .form-group input {
+        padding: 5px 35px;
+        height: 35px;
+    }
+
+    .form-group label {
+        padding: 5px;
+    }
+
+    .btnNew2 button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+/* For screens smaller than 400px */
+@media (max-width: 400px) {
+
+  section.main-content{
+    width: 400px;
+  }
+    .inspection-form {
+        width: 100%;
+        padding: 5px;
+    }
+
+    fieldset {
+        padding: 10px;
+        margin-top: 30px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+    .form-group {
+        margin-right: 0;
+        padding: 5px;
+    }
+
+    .form-group input {
+        padding: 5px 30px;
+        height: 30px;
+    }
+
+    .form-group label {
+        padding: 5px;
+        font-size: 0.9em;
+    }
+
+    .btnNew2 button {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .fa-magnifying-glass {
+        top: 50%;
     }
 }
