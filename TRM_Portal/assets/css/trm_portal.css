@@ -613,7 +613,7 @@ body {
         }
       }
       section.main-content {
-        padding: 70px 40px 50px 80px;
+        padding: 70px 40px 50px 70px;
         div.welcome {
           flex-direction: column;
           align-items: flex-start;
@@ -2307,6 +2307,7 @@ span a {
 
   section.main-content{
     width: 400px;
+    padding-left: 65px; 
   }
     .inspection-form {
         width: 100%;
