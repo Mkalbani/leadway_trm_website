@@ -2180,11 +2180,13 @@ span a {
   }
 
   .tabs .tab {
-    padding: 8px 16px;
+    padding: 8px 8px;
+    font-size: 13px;
   }
 
   .tab:nth-child(3) {
-    padding-right: 25px;
+    /* padding-right:25px; */
+    margin-right: 25px;
   }
 
   .info-grid,
