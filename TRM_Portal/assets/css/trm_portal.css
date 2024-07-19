@@ -891,11 +891,12 @@ option span {
 .creationCard2 {
   cursor: pointer;
 }
-
+ 
 .highlight1 {
   border-top: 1px solid var(--badge-ongoing-color);
   border-left: 1px solid var(--badge-ongoing-color);
   border-bottom: 1px solid var(--badge-ongoing-color);
+  border-right: 0.2px solid var(--badge-ongoing-color);
   border-radius: 5px;
 }
 
