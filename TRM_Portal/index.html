@@ -58,6 +58,19 @@
         </div>
     </div>
     
+    <script>
+        document.getElementById('password').addEventListener('focus', function () {
+            if (this.value === 'Enter your password') {
+                this.value = '';
+            }
+        });
+
+        document.getElementById('password').addEventListener('blur', function () {
+            if (this.value === '') {
+                this.value = 'Enter your password';
+            }
+        });
+    </script>
 <script src="scripts.js"></script>
 </body>
 </html>

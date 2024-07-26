@@ -640,10 +640,9 @@ body {
 
   /* dashboard */
 }
-
-@media only screen and (max-width: 768px) {
-
-  /* sign in screen */
+/* dashboard */
+@media only screen and (max-width: 570px) {
+/* sign in screen */
   .sign-in-wrapper .sign-in-container {
     width: 80%;
     flex-direction: column;
@@ -657,12 +656,15 @@ body {
   /* sign in screen */
 
   /* dashboard */
-  .body-container {
-    aside {
-      div.nav-opened {
+    .body-container {
+      aside {
         display: none;
       }
-    }
+  
+      aside.active {
+        display: flex;
+      }
+    
 
     main {
       header {
@@ -687,7 +689,107 @@ body {
 
         div.articles {
           div.summary-stats {
-            grid-template-columns: auto;
+            grid-template-columns: 1fr;
+
+            div.summary-card {
+              gap: 40px;
+
+              p {
+                /* font-size: 24px; */
+              }
+
+              span {
+                font-size: 24px;
+              }
+
+              .card-circle {
+                width: 100px;
+                height: 100px;
+              }
+            }
+          }
+
+          div.activity {
+            ul {
+              li {
+                flex-direction: column;
+                align-items: flex-start;
+              }
+            }
+          }
+        }
+
+        div.inspections {
+          div.table-container {
+            table {
+              width: 100%;
+
+              thead th:nth-child(3),
+              thead th:nth-child(4),
+              thead th:nth-child(5),
+              tr td:nth-child(3),
+              tr td:nth-child(4),
+              tr td:nth-child(5) {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 571px) and (max-width: 768px) {
+
+  /* sign in screen */
+  .sign-in-wrapper .sign-in-container {
+    width: 80%;
+    flex-direction: column;
+
+    div.form-card {
+      width: 100%;
+      padding: 40px;
+    }
+  }
+
+  /* sign in screen */
+
+  /* dashboard */
+    .body-container {
+      aside {
+        display: none;
+      }
+  
+      aside.active {
+        display: flex;
+      }
+    
+
+    main {
+      header {
+        a {
+          span.name {
+            display: none;
+          }
+        }
+      }
+
+      section.main-content {
+        padding: 70px 40px 50px 70px;
+
+        div.welcome {
+          flex-direction: column;
+          align-items: flex-start;
+
+          button {
+            width: fit-content;
+          }
+        }
+
+        div.articles {
+          div.summary-stats {
+            grid-template-columns: 1fr 1fr;
 
             div.summary-card {
               gap: 40px;
@@ -739,6 +841,8 @@ body {
 
   /* dashboard */
 }
+
+
 
 /* Inspection list */
 
