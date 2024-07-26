@@ -20,7 +20,8 @@
 
 <body>
     <div class="body-container">
-        <aside>
+        <div class="hamburger" id="hamburger" onclick="toggleAside()">&#9776;</div>
+        <aside id="aside">
             <nav>
                 <a href="index.html" class="nav-links"><i class="fa-light fa-objects-column"></i></a>
                 <a href="javascript:void(0)" class="nav-links active"><i class="fa-light fa-calendar"></i></a>
@@ -30,7 +31,8 @@
                 <a href="postloss_link_optional.html" class="nav-links"><i class="fa-light fa-gear"></i></a>
             </nav>
             <div class="nav-opened">
-                <img src="assets/images/leadway_logo_landscape.png" alt="Javascript Logo" class="nav-logo">
+                <img src="assets/images/leadway_logo_landscape.png" alt="Javascript Logo" class="nav-logo"
+                    onclick="location.href='trm_portal.html'">
                 <span>
                     <h4 class="nav-opened-title">TRM</h4>
                     <div class="openright-content" id="openright-content">
@@ -198,6 +200,7 @@
             window.location.href = 'new_inspection.html'; 
         });
     </script>
+    <script src="scripts.js"></script>
 </body>
 
 </html>

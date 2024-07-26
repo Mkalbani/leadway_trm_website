@@ -22,7 +22,8 @@
 
 <body>
     <div class="body-container">
-        <aside>
+        <div class="hamburger" id="hamburger" onclick="toggleAside()">&#9776;</div>
+        <aside id="aside">
             <nav>
                 <!-- <div class="nav-links-container"> -->
                 <a href="index.html" class="nav-links"><i class="fa-light fa-objects-column"></i></a>
@@ -35,7 +36,7 @@
                 <!-- </div> -->
             </nav>
             <div class="nav-opened">
-                <img src="assets/images/leadway_logo_landscape.png" alt="Javascript Logo" class="nav-logo">
+                <img src="assets/images/leadway_logo_landscape.png" alt="Javascript Logo" class="nav-logo"  onclick="location.href='trm_portal.html'">
                 <span>
                     <h4 class="nav-opened-title">TRM</h4>
                     <div class="openright-content" id="openright-content">
@@ -355,7 +356,7 @@
         </main>
     </div>
 
-    <script src="script.js"></script>
+    <script src="scripts.js"></script>
 </body>
 
 </html>

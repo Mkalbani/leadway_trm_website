@@ -17,6 +17,7 @@ function toggleAside() {
     aside.classList.toggle('active');
 }
 
+
 // Make card highlight when clicked
 document.addEventListener('DOMContentLoaded', function () {
     const creationCard1 = document.getElementById('creationCard1');

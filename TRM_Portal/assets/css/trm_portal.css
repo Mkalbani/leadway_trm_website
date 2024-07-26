@@ -59,6 +59,19 @@ body {
   background: var(--primary-white);
 }
 
+.hamburger {
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+  /* Hide by default */
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 30;
+  color: rgb(145, 16, 16);
+  /* Ensure it's on top */
+}
+
 /* dashboard */
 .body-container {
   height: 100%;
@@ -640,9 +653,14 @@ body {
 
   /* dashboard */
 }
+
 /* dashboard */
 @media only screen and (max-width: 570px) {
 /* sign in screen */
+    .hamburger {
+        display: block;
+        /* Show on smaller screens */
+      }
   .sign-in-wrapper .sign-in-container {
     width: 80%;
     flex-direction: column;
@@ -741,7 +759,10 @@ body {
 }
 
 @media only screen and (min-width: 571px) and (max-width: 768px) {
-
+    .hamburger {
+        display: block;
+        /* Show on smaller screens */
+      }
   /* sign in screen */
   .sign-in-wrapper .sign-in-container {
     width: 80%;
@@ -2519,6 +2540,12 @@ span a {
 /* PRELOSS LINK */
 /* For screens smaller than 768px */
 @media (max-width: 768px) {
+
+  .modal-content, .modal-content2{
+    width: 50%;
+    margin-right: 25%;
+  }
+
   .inspection-form {
     width: 100%;
     padding: 10px;
@@ -2601,4 +2628,22 @@ span a {
   .fa-magnifying-glass {
     top: 50%;
   }
+}
+
+
+/* 
+#aside {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: var(--primary-white);
+  z-index: 20;
+  transition: left 0.3s ease;
+} */
+
+#aside.active {
+  left: 0;
+  /* Slide in from the left */
 }
